@@ -1,0 +1,97 @@
+@media (max-width: 767px)
+    header
+        padding-top: 25px
+
+        .bars
+            display: block
+
+        .menu
+            display: none
+            +order(1)
+            width: 100%
+
+            ul
+                +flex-direction(column)
+                +align-items(flex-start)
+                padding-bottom: 15px
+
+        &.sticky
+            .menu
+                ul
+                    li
+                        a
+                            padding: 10px 12.5px
+
+    .main-slider 
+        .item
+            padding: 70px 0
+
+        h1
+            line-height: 67px
+            margin-bottom: 10px
+
+        .desc
+            font: 400 20px/28px $mainf
+
+        .item
+            .left-side
+                width: 60%
+
+            .right-side
+                width: 40%
+
+    h1
+        font-size: 72px
+
+    h2
+        font-size: 34px
+
+    .contact
+        h2
+            margin-bottom: 30px
+
+    .features
+        h2
+            margin-bottom: 40px
+
+    footer
+        .col-md-4
+            margin-bottom: 30px
+
+@media (max-width: 575px)
+    .main-slider 
+        .desc
+            font-size: 18px
+            line-height: 24px
+
+    .gallery 
+        .item
+            width: 50%
+
+    .features
+        padding: 100px 0 45px
+
+    .testimonial
+        padding: 97px 0 107px
+
+    footer 
+        .menu
+            ul
+                width: 50%
+                margin-bottom: 20px
+
+    h1
+        font-size: 62px
+
+    h2
+        font-size: 30px
+
+    .form
+        button
+            font-size: 28px
+
+@media (max-width: 375px)
+    .features 
+        .box-container 
+            .box
+                width: 100%

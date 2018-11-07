@@ -1,0 +1,64 @@
+html
+	overflow-x: hidden
+
+body
+	font: 400 14px $mainf
+	overflow-x: hidden
+	
+a
+	+transition(all 300ms)
+
+	&:hover, &:focus
+		+transition(all 300ms)
+
+img
+	max-width: 100%
+
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	font-family: $mainf
+
+h1
+	font-size: 94px
+
+h2
+	font-size: 42px
+
+h3
+	font-size: 20px
+
+.form
+	.form-group
+		margin-bottom: 24px
+
+	input.form-control, select.form-control, textarea.form-control
+		+border-radius(0)
+		border: 0
+		padding: 20px 24px
+
+	&.submitted
+		input:invalid, select:invalid, textarea:invalid
+			border-bottom: 2px solid red
+
+	input.form-control, select.form-control
+		height: 66px !important
+
+	select
+		-webkit-appearance: none
+		-moz-appearance: none
+		text-indent: 1px
+		text-overflow: ''
+		background-image: url('../img/select-arrow.png')
+		background-repeat: no-repeat
+		background-position: 95% center
+
+	textarea.form-control
+		resize: none
+		height: 170px
+
+	button
+		font: 700 32px $mainf
+		color: #FFF
+		background: none
+		border: 0
+		cursor: pointer
